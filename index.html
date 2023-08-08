@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Your Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>Jared Barner</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="container about-content">
+    <div class="profile">
+      <img src="img/Me.jpg" alt="Profile Picture">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p> Welcome to my website. I am a Navy Veteran who has an art degree in Game Art & Design. Working on my skills as a programmer and artist.
+            Please look at some projects Ive worked on and send an inquiry if your interested in hiring.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="github-projects">
+      <div class="github-project" style="background-image: url('img/Elden-Ring.jpg');">
+        <a href="https://github.com/BizTheHabesha/group-6-project-1" target="_blank" class="project-content"></a>
+          <h3>Boss Fight</h3>
+          <p>App to help figure out who will win in a fight!</p>
+      </div>
+      <div class="github-project" style="background-image: url('/img/Crypto.png');">
+        <a href="https://github.com/evanknight18/crypt-keeper" target="_blank" class="project-content"></a>
+          <h3>Cryptkeeper</h3>
+          <p>App to help manage your crypto!</p>
+      </div>
+      <div class="github-project" style="background-image: url('/img/Pokemon.jpg');">
+        <a href="https://github.com/kaleikautakaoka/Poke-Tracker" target="_blank" class="project-content"></a>
+          <h3>Poketracker</h3>
+          <p>Keep track of your pokemon!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container contact-content">
+    <h2>Contact Me</h2>
+    <form action="send_email.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>2023 Jared Barner. All rights reserved.</p>
+    <a href="https://github.com/JaredOBarner?tab=repositories" target="_blank">
+      <img src="/img/gitlab.png" alt="GitLab Logo">
+    </a>
+  </footer>
+  
+  </footer>
+</body>
+</html>
